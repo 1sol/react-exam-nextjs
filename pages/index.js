@@ -1,9 +1,13 @@
 import Link from "next/link";
+import Head from "next/head";
 import Layout from "../components/Layout";
 
-const exam = () => (
+const index = () => (
   <div>
     <Layout />
+    <Head>
+      <title>index page</title>
+    </Head>
     <h1>hello</h1>
     <div>
       <Link href="/about">
@@ -13,4 +17,4 @@ const exam = () => (
   </div>
 );
 
-export default exam;
+export default index;
